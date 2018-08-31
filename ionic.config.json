@@ -1,0 +1,7 @@
+{
+  "name": "lastnani",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>
+      Your To Do List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+
+	<ion-fab bottom right >
+  		<button ion-fab color="primary" (click)="addItem()">+</button>
+	</ion-fab>
+
+	<ion-card>
+	  <ion-list>
+	    <ion-item *ngFor="let item of items"> {{item.title}}
+	    <button ion-button item-end (click)="deleteItem(item)"><ion-icon name="ios-trash-outline"></ion-icon></button>
+	    <button ion-button item-end (click)="editItem(item)"><ion-icon name="ios-create-outline"></ion-icon></button>
+	    <button ion-button item-end (click)="viewItem(item)"><ion-icon name="ios-eye-outline"></ion-icon></button>
+	</ion-item>
+	  </ion-list>
+	</ion-card>
+</ion-content>
